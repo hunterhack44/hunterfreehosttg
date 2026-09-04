@@ -1,0 +1,79 @@
+Hunter HOST V10.7 — PROJECT MANAGEMENT + RELIABILITY EDITION
+===============================================================
+
+PROJECT NAME SEPARATOR
+----------------------
+Project names may contain spaces. Use | between separate arguments.
+Examples:
+/rename Aliw Like | Aliw Like2
+/replacefile ElevateX Like | bot.py
+/viewfile ElevateX Like | bot.py
+/setenv ElevateX Like | BOT_TOKEN | 123456:ABC
+/scheduleaction Aliw Like | restart | 6h
+/datasync 123456789 | Aliw Like | on
+
+USER / PROJECT FEATURES
+-----------------------
+/setup PROJECT NAME                 Smart project setup/runtime/ENV summary
+/envwizard PROJECT NAME            Required ENV wizard
+/newfile PROJECT | PATH            Create safe empty project file
+/newfolder PROJECT | PATH          Create project folder
+/filemanager PROJECT | FOLDER      Browse files
+/viewfile PROJECT | PATH           Preview text/code file
+/downloadfile PROJECT | PATH       Download one file
+/replacefile PROJECT | PATH        Replace one file by uploading updated file
+/editfile PROJECT | PATH           Edit text/code in Telegram
+/renamefile PROJECT | OLD | NEW    Rename project file
+/deletefile PROJECT | PATH | CONFIRM
+/filehistory PROJECT | PATH        List automatic file versions
+/undofile PROJECT | PATH | VERSION Restore previous file version
+/testproject PROJECT NAME          Syntax + ENV pre-restart validation
+/timeline PROJECT NAME             Project activity timeline
+/errorcenter PROJECT NAME          Smart known-error diagnosis
+/projectnotify PROJECT | EVENT | on|off
+/dependencies PROJECT NAME         Dependency center
+/depadd PROJECT | PACKAGE          Add Python/npm dependency
+/depremove PROJECT | PACKAGE       Remove dependency
+/depupdate PROJECT | PACKAGE       Update dependency
+/regenrequirements PROJECT         Regenerate Python requirements.txt
+/isolationstatus                   Show effective isolation/security level
+
+GITHUB DATA SYNC V2 — OWNER ONLY
+--------------------------------
+/datasync USER_ID | PROJECT | on|off
+/datasyncstatus USER_ID | PROJECT
+/syncpreview USER_ID | PROJECT
+/syncdata USER_ID | PROJECT
+/restoredata USER_ID | PROJECT
+/dataversions USER_ID | PROJECT
+/restoreversion USER_ID | PROJECT | YYYYMMDD_HHMMSS-data.zip
+/datasynccenter
+/syncall
+
+Data Sync V2:
+- Private repository only
+- Owner-controlled and default OFF
+- Timestamped data backup versions
+- latest-data.zip pointer retained
+- Remote SHA conflict protection
+- Runtime data only; .env/secrets/source dependency folders are excluded
+
+ADMIN / OWNER
+-------------
+/projectexplorer USER_ID | PROJECT(optional)
+/projectlock USER_ID | PROJECT | on|off
+
+Project Lock blocks start/GitHub sync and user-side file modifications until unlocked.
+
+RELIABILITY / SECURITY
+----------------------
+- Manager BOT_TOKEN/API/GitHub/password-like secrets stripped from child processes
+- Project-required ENV must be configured before launch
+- ZIP traversal protection
+- ZIP symlink rejection
+- Archive expanded-size limit for non-owner users
+- Dependency installation timeout
+- File versions before edit/replace/delete/rename
+- Test-before-restart helpers
+- GitHub staged deployment / rollback logic retained from V10.5/V10.6
+- True OS/container isolation remains dependent on Docker/cgroups support from the hosting provider

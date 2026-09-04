@@ -1,0 +1,29 @@
+Hunter HOST V10.6 — NEW OWNER/ADMIN COMMANDS
+
+OWNER ONLY — GITHUB DATA SYNC
+/datasync USER_ID PROJECT on|off
+/datasyncstatus USER_ID PROJECT
+/syncdata USER_ID PROJECT
+/restoredata USER_ID PROJECT
+
+USER — ENV GUARD
+/envcheck PROJECT
+/setenv PROJECT KEY VALUE
+/env PROJECT
+/delenv PROJECT KEY
+
+USER — DATA-SAFE FILE REPLACEMENT
+/replacefile PROJECT PATH
+Then upload the replacement file when prompted.
+
+ADMIN / OWNER — USER PROJECT FILES
+/adminfiles USER_ID PROJECT [FOLDER]
+/replaceuserfile USER_ID PROJECT PATH
+Then upload the replacement file when prompted.
+
+NOTES
+- Data Sync is OFF by default for every project.
+- Only OWNER can enable/disable Data Sync.
+- Repository must be private for Data Sync.
+- Project owner's GitHub token needs Contents write permission for Data Sync.
+- Hosted projects do NOT inherit ElevateX Host's BOT_TOKEN or other manager secrets.

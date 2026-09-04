@@ -1,0 +1,12 @@
+Hunter Host V10.7.7
+
+Base: V10.7.6 Referral Count Fix
+
+Included fixes retained:
+- Referral deep-link pending/verification counting fix
+- Fast callback/input reliability optimizations
+- GitHub remembered-token and manual redeploy controls
+- GitHub pipe/SHA HTTP 422 parsing fix
+- ENV skip fixes
+
+This release is a consolidated/stable build; it does not intentionally reset user/project data.

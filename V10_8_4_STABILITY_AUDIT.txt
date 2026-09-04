@@ -1,0 +1,33 @@
+Hunter Host V10.8.4 — Full Stability Audit Edition
+
+AUDITED & FIXED
+- Admin project Stop/Restart callbacks no longer call undefined helpers.
+- Admin project Logs now uses the correct log_path field.
+- Added missing require_access compatibility helper.
+- Added missing human_duration formatter.
+- Added missing parse_interval_seconds parser.
+- /backups now lists the actual full-source backup naming pattern.
+- /restorebackup now restores state files from the real host/... backup layout safely.
+- Backup Now admin button reports partial vault failures accurately and supports multipart owner delivery.
+- Daily backup logs a clear error if no vault accepts the archive.
+- Force Join channel username aligned to @elevatexbyzaid.
+- Telegram command autoload failure no longer prevents bot startup.
+- Duplicate clean_project_name definition removed; project names remain readable with spaces while path separators/control chars are blocked.
+- Persistent bottom keyboard retained.
+- Command autoload retained with user commands only.
+- Both owners and both backup chats retained.
+- GitHub, ENV, referral, admin project explorer, V10.8 control center and backup diagnostics retained.
+
+STATIC VALIDATION
+- Python syntax compile: PASS
+- 194 command handlers / 194 unique
+- Missing registered handlers: 0
+- Duplicate command registrations: 0
+- Duplicate top-level function/class definitions: 0
+- Wrong item.log_file references: 0
+- Old Force Join channel username references: 0
+- Obsolete backup filename pattern references: 0
+- ZIP integrity: PASS
+
+NOTE
+External runtime conditions such as Telegram permissions in backup groups, revoked bot/GitHub tokens, unavailable npm/git binaries, host resource limits, or network outages cannot be guaranteed by source-code validation. Use /backupcheck for Telegram vault access diagnostics.

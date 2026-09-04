@@ -1,0 +1,20 @@
+Hunter Host V11.0 — Premium UI + Hardened Runtime Edition
+
+Core identity
+- Single owner/admin: 8763895360
+- Single backup + mandatory upload archive chat: -1004471523838
+
+V11 upgrades
+- Premium Admin Center now exposes Requests and Security Center directly.
+- /request continues to deliver user requests to the single owner with Approve/Reject controls.
+- V11 Security Center reports manager-secret isolation, log redaction, quarantine, ZIP safety, crash-loop guard, resource guard, upload vault and container status.
+- Best-effort secret redaction masks Telegram bot tokens, GitHub tokens, Bearer tokens and common key/password assignments before logs are displayed.
+- Security scanner extended for credential harvesting, metadata/host probing and persistence/process-control indicators.
+- High-risk non-owner projects remain blocked before execution.
+- ZIP guard adds maximum archive entry count and maximum single extracted-file size in addition to existing traversal, symlink and expanded-size protection.
+- Upload archive includes Telegram file unique ID for stronger traceability.
+- Existing crash-loop protection, resource limits, ENV isolation, GitHub, backups, file manager, health, watchdog, notifications and project controls retained.
+- Semantic button styling retained with compatibility fallback.
+
+Important
+True per-project kernel/container isolation is host-dependent. Enable Docker/cgroups only on a hosting platform that supports them. No source-only bot can guarantee absolute isolation for arbitrary untrusted code on a shared OS account.

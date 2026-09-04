@@ -1,0 +1,9 @@
+Hunter Host V10.9.0 Premium Security Edition
+
+- Single hardcoded Owner/Admin: 8204336028
+- Single hardcoded backup + upload archive chat: -1003565312080
+- Uploaded files are mandatory-archived before processing
+- /request registered and exposed in user command menu; requests go to owner with Approve/Reject buttons
+- Delegated admin access disabled (single-owner mode)
+- Existing V10.8.5 security scanner, archive checks, ENV isolation, audit, health, watchdog, backups, project control center and semantic button styling retained
+- Secrets remain in environment; non-secret internal IDs are hardcoded

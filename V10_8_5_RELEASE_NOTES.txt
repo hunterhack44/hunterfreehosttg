@@ -1,0 +1,15 @@
+Hunter Host V10.8.5 — Reference Feature Merge
+
+Inspected Premium Hosting Bot reference package and merged compatible missing ideas without importing its duplicate/overlapping architecture.
+
+Added:
+- Mandatory Upload Group Archive: every Telegram document is copied to UPLOAD_GROUP_CHAT before any deploy/import/replace flow.
+- Default archive group: @alichatzone (override in .env with public username or private -100... ID).
+- UPLOAD_GROUP_REQUIRED=1 guarantees accepted uploads have a group copy; if group delivery fails, deployment is blocked with an exact diagnostic.
+- Owner-only /uploadgroupstatus preflight checks group reachability and bot membership.
+- Upload archive includes user, user ID, username when available, filename, size and timestamp.
+- Existing dual backup vault mirroring remains unchanged.
+
+Already present in aliw Host and therefore not duplicated from the reference: security scanning, plan/resource limits, tickets, analytics, GitHub hosting/backups, project clone, scheduled actions/restarts, feature flags, admin project explorer, file manager, ENV manager, live logs, watchdog, notifications, import/export and backup/restore.
+
+Not imported intentionally: the reference bot's approval/payments/coupons/trials/2FA systems because they conflict with the current ElevateX Host onboarding/business rules or are unrelated to core hosting.

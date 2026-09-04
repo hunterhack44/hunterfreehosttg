@@ -1,0 +1,20 @@
+Hunter Host V10.8.0 — Premium Control Center Edition
+
+Highlights
+- Project Control Center V2 with button-first Logs, Files, ENV, GitHub, Backups, Activity, Smart Error, Notifications, Settings and Delete.
+- Admin Project Explorer V2 with pagination, Stop/Restart/Logs/Files/ENV/Backup/Lock/Delete controls.
+- Live Logs with manual refresh and 30-second auto refresh mode.
+- Advanced button-driven file browsing, preview, download and replacement workflow.
+- ENV Manager V3 dashboard + existing ENV Wizard/Skip system.
+- GitHub Center V3 with remembered token, update/pull/force redeploy/auto deploy plus Data/Backup shortcut.
+- Backup & Restore UI with safety snapshot before restore.
+- Smart Error Center can suggest/install safe Python dependency fixes for common missing modules.
+- Duplicate Start/Restart/Stop taps are rejected while an operation is busy.
+- Bounded concurrent project starts (MAX_CONCURRENT_DEPLOYS, default 3).
+- Safer Delete with optional backup and 48-hour recoverable Trash.
+- Admin dashboard redesigned; user Telegram command menu reduced to essential shortcuts.
+- V10.7.8 dual backup chats, multi-owner support, referral fix, GitHub fixes and semantic button fallback retained.
+
+Notes
+- Colored Telegram button styles depend on the installed python-telegram-bot/Telegram Bot API support. Unsupported versions safely fall back to normal buttons.
+- True per-project container/cgroup isolation remains host/panel dependent.

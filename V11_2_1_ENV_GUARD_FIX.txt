@@ -1,0 +1,11 @@
+Hunter Host V11.2.1 — ENV Guard Fix
+
+Fixed false ENV_SETUP_REQUIRED detection for runtime/dependency variables.
+
+- .elevatex_vendor is excluded from ENV source scanning.
+- venv/env/node_modules and cache folders are excluded.
+- EXCEPTIONGROUP_NO_PATCH is treated as a runtime/internal variable.
+- SSL_CERT_DIR and SSL_CERT_FILE are treated as system/OpenSSL variables.
+- REQUESTS_CA_BUNDLE, CURL_CA_BUNDLE and common Python/pip runtime variables are also excluded.
+- These variables no longer need /setenv and will not block project start.
+- main.py syntax compilation passed.

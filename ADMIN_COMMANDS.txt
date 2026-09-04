@@ -1,0 +1,39 @@
+ALI HOST V10.6 — NEW PREMIUM COMMANDS
+
+USER
+/deployprofile PROJECT [set KEY VALUE|reset]
+/predeploy PROJECT
+/markgood PROJECT
+/restoregood PROJECT
+/githubcenter
+/deploycommit PROJECT SHA
+/filemanager PROJECT [folder]
+/viewfile PROJECT PATH
+/downloadfile PROJECT PATH
+/renamefile PROJECT OLD NEW
+/deletefile PROJECT PATH CONFIRM
+/editfile PROJECT PATH
+/canceledit
+/envprofile PROJECT list|use NAME|set NAME KEY VALUE|delete NAME
+/rotateenv PROJECT KEY NEW_VALUE
+/scheduleaction PROJECT restart|backup|sync 6h
+/schedules
+/unscheduleaction PROJECT ACTION
+/depsnapshot PROJECT NAME
+/deprestore PROJECT NAME
+/exportproject PROJECT
+/importproject
+/features
+/loyalty
+
+ADMIN / OWNER
+/feature NAME on|off
+/usercenter USER_ID
+/transferproject PROJECT NEW_USER_ID
+/bulkproject stop|restart USER_ID|all
+/announcement set TEXT
+/announcement clear
+/campaign create NAME NOTE
+/campaign delete NAME
+
+Project Control Center includes a Delete Project button.

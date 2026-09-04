@@ -1,0 +1,18 @@
+Hunter Host V11.2 — VENV Fallback Fix
+
+Fixed:
+- Python uploads no longer fail only because `python -m venv` is unavailable.
+- Healthy private `.venv` remains the preferred runtime.
+- Broken/partial venv environments are detected and removed.
+- If venv/ensurepip is unavailable, dependencies install into `.elevatex_vendor`.
+- Project launch automatically adds `.elevatex_vendor` to PYTHONPATH.
+- /repairenv supports both venv and vendor fallback.
+- /depadd supports the fallback environment.
+- Smart dependency auto-fix supports the fallback environment.
+- /piplist and /regenrequirements support both environment types.
+- /depupdate supports the fallback environment.
+- /depremove safely handles project-local fallback packages.
+- Dependency/vendor folders are excluded from normal source backup/archive operations where applicable.
+
+This directly addresses:
+Command '['/usr/bin/python3', '-m', 'venv', '.../.venv']' returned non-zero exit status 1.

@@ -1,0 +1,8 @@
+Hunter Host V11.1 Premium Admin + Force Join
+Single owner: 8763895360
+Single backup/upload chat: -1004471523838
+Archive Required defaults OFF.
+Mandatory archive failure (if later enabled): uploader receives no error; deployment cancels and owner gets diagnostic.
+Dynamic Force Join add/remove + ON/OFF.
+Premium screenshot-inspired Admin Center using implemented actions only.
+Semantic primary/success/danger button styles are requested when supported; older PTB/Telegram clients safely render standard buttons.

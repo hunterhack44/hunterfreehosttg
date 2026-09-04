@@ -1,0 +1,7 @@
+Hunter Host V10.8.3 Backup Delivery Fix
+- Backup delivery is independent per vault.
+- Manual backup is sent to owner chat even when a vault fails.
+- Exact per-vault Telegram errors are shown.
+- Large ZIPs automatically use multipart Telegram transport.
+- /backupcheck checks accessibility/membership for both backup vaults.
+- Existing V10.8.2 persistent keyboard, command autoload, support, GitHub, referral, multi-owner and admin project controls retained.

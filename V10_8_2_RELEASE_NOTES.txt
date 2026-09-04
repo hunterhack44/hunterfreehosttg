@@ -1,0 +1,9 @@
+Hunter Host V10.8.2 — Persistent Keyboard Restore
+
+- Restored persistent bottom ReplyKeyboard buttons.
+- Buttons remain visible after use (one_time_keyboard=False, is_persistent=True).
+- Telegram / command menu autoload retained.
+- Only user commands remain published in command menu.
+- Inline Back behavior remains separate from the bottom keyboard.
+- Support details from V10.8.1 retained.
+- All V10.8 features retained.

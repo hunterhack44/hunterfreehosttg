@@ -1,0 +1,6 @@
+Hunter Host V10.8.1
+- Telegram user commands autoload on startup.
+- Only user commands shown; admin commands hidden.
+- Persistent bottom keyboard removed.
+- Support Owner/Channel/Group/Direct updated.
+- All V10.8 features retained.
