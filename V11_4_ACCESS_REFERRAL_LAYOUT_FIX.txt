@@ -1,0 +1,20 @@
+V11.4 — HOST ACCESS, REFERRAL TIERS, FORCE-JOIN DEFAULTS, AND MOBILE LAYOUT
+
+Changed files in the update patch:
+- main.py
+- README.md
+- ADMIN_COMMANDS.txt
+
+New file:
+- V11_4_ACCESS_REFERRAL_LAYOUT_FIX.txt
+
+Behavior updates:
+- Force Join now uses only the admin-managed target list. Empty/deleted lists remain empty; other membership-gate behavior is unchanged.
+- Hosting requires active Premium or an earned referral entitlement. Referral OFF means Premium-only hosting, unless the Free Bot toggle is ON.
+- Free Bot is toggled from the admin home. Otherwise-ineligible users get a basic 1 upload/day and 1 running-project baseline, not Premium membership/features; earned Mode 1 referral caps remain separate.
+- Mode 1 keeps its referral threshold and configured upload/running caps. Excess referrals do not raise the caps.
+- Mode 2 tiers have adjustable referral threshold, concurrent project count, and days. Existing Mode 2 records without a projects field migrate to one project.
+- Long HTML and unbroken words wrap inside the decorative mobile message frame.
+- Admin panel contains no Wallet button.
+
+Persistence note: referral.json is intentionally not packaged in this patch ZIP, because it contains live referral/premium state. The updated main.py migrates the existing file in place on startup; do not overwrite it with a blank template.
