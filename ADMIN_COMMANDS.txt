@@ -1,0 +1,53 @@
+ALI HOST V10.6 — NEW PREMIUM COMMANDS
+
+USER
+/deployprofile PROJECT [set KEY VALUE|reset]
+/predeploy PROJECT
+/markgood PROJECT
+/restoregood PROJECT
+/githubcenter
+/deploycommit PROJECT SHA
+/filemanager PROJECT [folder]
+/viewfile PROJECT PATH
+/downloadfile PROJECT PATH
+/renamefile PROJECT OLD NEW
+/deletefile PROJECT PATH CONFIRM
+/editfile PROJECT PATH
+/canceledit
+/envprofile PROJECT list|use NAME|set NAME KEY VALUE|delete NAME
+/rotateenv PROJECT KEY NEW_VALUE
+/scheduleaction PROJECT restart|backup|sync 6h
+/schedules
+/unscheduleaction PROJECT ACTION
+/depsnapshot PROJECT NAME
+/deprestore PROJECT NAME
+/exportproject PROJECT
+/importproject
+/features
+/loyalty
+
+ADMIN / OWNER
+/feature NAME on|off
+/usercenter USER_ID
+/transferproject PROJECT NEW_USER_ID
+/bulkproject stop|restart USER_ID|all
+/announcement set TEXT
+/announcement clear
+/campaign create NAME NOTE
+/campaign delete NAME
+
+Project Control Center includes a Delete Project button.
+
+
+V11.4 HOST ACCESS + REFERRALS
+/premium USER_ID 10u 10r     Set Premium daily uploads (u) and concurrent running projects (r)
+/unpremium USER_ID           Remove Premium and set its upload/running limits to zero
+/credits [USER_ID]           Shows upload/running quotas; no credit wallet is used
+/admin → Free Bot            Toggle basic hosting ON/OFF; otherwise-ineligible users get a 1/day + 1-running baseline, not Premium features
+/admin → Referral Rewards    Toggle referrals and select Mode 1 or Mode 2
+Mode 1 +/- controls: referral threshold, uploads/day cap, and running-project cap. Defaults: 3 refs → 10/day + 10 running; extra referrals do not raise caps.
+Mode 2 +/- controls per tier: referral threshold, simultaneous project slots, and access days. Defaults: 1 ref → 1 project/10 days; 2 refs → 1 project/30 days.
+Mode 2 terms: unique verified referrals count once; deleting a project frees its slot; access ends at expiry.
+Hosting requires Premium or an earned referral tier. With Referral OFF, only Premium can host unless Free Bot is ON.
+Admin → Force Join lists only admin-configured targets. Deleted targets stay deleted; no code-default Main Channel/Support entries are restored.
+Existing referral and Premium state lives in referral.json and is migrated in place at startup. Keep the live file; the source adds the new Mode 2 project field automatically.
